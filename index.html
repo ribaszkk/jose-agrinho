@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Importância do Agro</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f4f7f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1b4d3e;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8db600;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #8db600;
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Seções Principais */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1b4d3e;
+            font-size: 32px;
+        }
+
+        /* Grid de Pilares */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #1b4d3e;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1b4d3e;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        /* Seção sobre Sustentabilidade */
+        .sustentabilidade {
+            background-color: #e8efe9;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #113327;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 32px; }
+            .hero-content p { font-size: 16px; }
+            .nav-container { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">AgroForte</div>
+            <nav>
+                <a href="#importancia">Importância</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#sustentabilidade">Tecnologia</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Motor da Economia e da Vida</h1>
+            <p>Descubra como o agronegócio alimenta o mundo, gera empregos e impulsiona o desenvolvimento sustentável.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        
+        <!-- Seção Introdução -->
+        <section id="importancia" style="margin-bottom: 60px;">
+            <h2 class="section-title">Por que o Agro é vital?</h2>
+            <p style="font-size: 18px; text-align: center; max-width: 800px; margin: 0 auto; color: #555;">
+                O agronegócio vai muito além do cultivo da terra. Ele engloba uma cadeia produtiva complexa que envolve ciência, tecnologia, indústria e logística, sendo o principal responsável por garantir a segurança alimentar global.
+            </p>
+        </section>
+
+        <!-- Seção Pilares (Grid) -->
+        <section id="pilares">
+            <h2 class="section-title">Os Três Pilares do Agronegócio</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🌾 Segurança Alimentar</h3>
+                    <p>Produção em larga escala de grãos, carnes, frutas e vegetais. O setor garante o abastecimento diário das cidades e combate a fome mundial.</p>
+                </div>
+                <div class="card">
+                    <h3>💼 Força Econômica</h3>
+                    <p>Responsável por grande parte do PIB nacional e pela geração de milhões de empregos diretos e indiretos, sustentando o comércio e as exportações.</p>
+                </div>
+                <div class="card">
+                    <h3>🚜 Inovação Tecnológica</h3>
+                    <p>Uso de drones, inteligência artificial, análise de dados e biotecnologia para aumentar a eficiência do campo e reduzir o desperdício.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sustentabilidade -->
+        <section id="sustentabilidade" class="sustentabilidade">
+            <h2 style="color: #1b4d3e; margin-bottom: 15px; text-align: center;">Agro Sustentável</h2>
+            <p style="max-width: 800px; margin: 0 auto; text-align: center; color: #444;">
+                O futuro do setor depende do equilíbrio ambiental. Através de práticas como o plantio direto, rotação de culturas e a integração lavoura-pecuária-floresta (ILPF), o agronegócio moderno busca produzir mais utilizando menos recursos naturais.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 AgroForte - Informativo sobre o Agronegócio. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
